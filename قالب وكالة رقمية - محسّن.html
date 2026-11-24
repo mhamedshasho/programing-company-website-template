@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="موقع تعريفي احترافي يعرض خدماتك وأعمالك وطرق التواصل معك.">
+<meta name="theme-color" content="#09090b">
+<meta property="og:title" content="اسم النشاط | الموقع الرسمي">
+<meta property="og:description" content="تعرف على خدماتنا وأعمالنا وتواصل معنا.">
+<title>اسم النشاط | الموقع الرسمي</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09090b;--surface:#121215;--border:#27272a;--primary:#6366f1;--primary-hover:#4f46e5;--text:#fafafa;--muted:#a1a1aa;--container:1160px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:90px}
+body{font-family:"IBM Plex Sans Arabic",sans-serif;background:var(--bg);color:var(--text);line-height:1.75;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit}
+.container{width:min(var(--container),calc(100% - 40px));margin-inline:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(9,9,11,.94);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-size:1.35rem;font-weight:700}
+.brand img{width:auto;height:42px;max-width:150px;object-fit:contain}
+.brand-mark{width:12px;height:12px;border-radius:50%;background:var(--primary)}
+.nav-links{display:flex;align-items:center;gap:clamp(14px,2.5vw,32px)}
+.nav-links a{text-decoration:none;color:var(--muted);font-size:.95rem}
+.nav-links a:hover{color:var(--text)}
+.menu-toggle{display:none;border:1px solid var(--border);background:var(--surface);color:var(--text);border-radius:10px;padding:9px 12px;font:inherit}
+.btn{display:inline-flex;justify-content:center;align-items:center;min-height:48px;padding:10px 22px;border-radius:10px;text-decoration:none;font-weight:700;transition:.2s}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary-hover);transform:translateY(-2px)}
+.btn-outline{border:1px solid var(--border);color:var(--text)}
+.btn-outline:hover{background:var(--surface)}
+.hero{padding:clamp(58px,8vw,110px) 0;display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(28px,5vw,70px);align-items:center;min-height:600px}
+.hero-tag{display:inline-block;padding:6px 14px;border-radius:50px;background:color-mix(in srgb,var(--primary) 16%,transparent);color:var(--primary);font-weight:700;font-size:.9rem;margin-bottom:18px}
+h1{font-size:clamp(2.15rem,5vw,4rem);line-height:1.25;margin-bottom:20px}
+.hero p{color:var(--muted);font-size:clamp(1rem,1.5vw,1.15rem);max-width:620px;margin-bottom:28px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}
+.hero-image{border:1px solid var(--border);border-radius:24px;overflow:hidden;min-height:320px;background:var(--surface)}
+.hero-image img{width:100%;height:100%;min-height:320px;max-height:470px;object-fit:cover}
+.section{padding:clamp(58px,7vw,90px) 0}
+.section-head{text-align:center;max-width:720px;margin:0 auto 38px}
+.section-head h2{font-size:clamp(1.7rem,3vw,2.5rem);margin-bottom:8px}
+.section-head p,.muted{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.service,.work-card{background:var(--surface);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.service{padding:24px}
+.service-icon{width:42px;height:42px;border-radius:12px;background:color-mix(in srgb,var(--primary) 18%,transparent);margin-bottom:14px}
+.service h3{font-size:1.15rem;margin-bottom:6px}
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.work-card img{width:100%;height:220px;object-fit:cover}
+.work-content{padding:20px}
+.work-content small{color:var(--primary);font-weight:700}
+.work-content h3{margin:6px 0}
+.contact-panel{background:var(--surface);border:1px solid var(--border);border-radius:20px;padding:clamp(24px,5vw,48px);display:flex;align-items:center;justify-content:space-between;gap:24px}
+footer{border-top:1px solid var(--border);padding:28px 0;color:var(--muted);text-align:center;font-size:.92rem}
+@media(max-width:800px){.hero{grid-template-columns:1fr;min-height:0;text-align:center}.hero p{margin-inline:auto}.actions{justify-content:center}.hero-image{max-height:380px}.services,.work-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.contact-panel{flex-direction:column;text-align:center}}
+@media(max-width:600px){.container{width:min(100% - 28px,var(--container))}.nav{min-height:66px}.brand{font-size:1.15rem}.brand img{height:34px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:65px;inset-inline:0;background:#101014;border-bottom:1px solid var(--border);padding:14px 20px 20px;flex-direction:column;align-items:stretch;gap:0}.nav-links.open{display:flex}.nav-links a{padding:12px 4px;border-bottom:1px solid var(--border)}.nav-links .btn{margin-top:12px}.hero{padding:54px 0 42px;gap:28px}.hero-image,.hero-image img{min-height:230px;max-height:290px}.actions{flex-direction:column}.actions .btn{width:100%}.services,.work-grid{grid-template-columns:1fr}.work-card img{height:205px}.section{padding:52px 0}.contact-panel .btn{width:100%}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#home" aria-label="الصفحة الرئيسية"><span class="brand-mark" id="brandMark"></span><span id="brandName">اسم النشاط</span></a>
+<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mainNav">القائمة</button>
+<nav class="nav-links" id="mainNav" aria-label="القائمة الرئيسية">
+<a href="#services">خدماتنا</a><a href="#work">أعمالنا</a><a href="#contact" class="btn btn-primary">تواصل معنا</a>
+</nav>
+</div>
+</header>
+<main id="home">
+<section class="container hero">
+<div>
+<span class="hero-tag" id="heroTag">اسم المجال أو التخصص</span>
+<h1 id="heroTitle">حلول وخدمات تناسب احتياجاتك</h1>
+<p id="heroDescription">اكتب هنا نبذة واضحة عن نشاطك وما تقدمه لعملائك، مع التركيز على القيمة التي يحصلون عليها.</p>
+<div class="actions"><a class="btn btn-primary" href="#contact">تواصل معنا</a><a class="btn btn-outline" href="#work">استكشف أعمالنا</a></div>
+</div>
+<div class="hero-image"><img id="heroImage" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1100&q=85" alt="صورة تمثل نشاط الشركة" loading="eager"></div>
+</section>
+<section class="section" id="services">
+<div class="container">
+<div class="section-head"><h2>خدماتنا</h2><p>عدّل هذه البطاقات لتعرض الخدمات الفعلية التي تقدمها.</p></div>
+<div class="services">
+<article class="service"><div class="service-icon"></div><h3>الخدمة الأولى</h3><p class="muted">وصف مختصر وواضح للخدمة الأولى.</p></article>
+<article class="service"><div class="service-icon"></div><h3>الخدمة الثانية</h3><p class="muted">وصف مختصر وواضح للخدمة الثانية.</p></article>
+<article class="service"><div class="service-icon"></div><h3>الخدمة الثالثة</h3><p class="muted">وصف مختصر وواضح للخدمة الثالثة.</p></article>
+</div>
+</div>
+</section>
+<section class="section" id="work">
+<div class="container">
+<div class="section-head"><h2>نماذج من أعمالنا</h2><p>أضف أعمالك الحقيقية وصورها، أو احذف هذا القسم إن لم يكن مناسباً لنشاطك.</p></div>
+<div class="work-grid">
+<article class="work-card"><img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=85" alt="صورة العمل الأول" loading="lazy"><div class="work-content"><small>تصنيف العمل</small><h3>اسم العمل الأول</h3><p class="muted">وصف حقيقي مختصر للعمل.</p></div></article>
+<article class="work-card"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=85" alt="صورة العمل الثاني" loading="lazy"><div class="work-content"><small>تصنيف العمل</small><h3>اسم العمل الثاني</h3><p class="muted">وصف حقيقي مختصر للعمل.</p></div></article>
+<article class="work-card"><img src="https://images.unsplash.com/photo-1555421689-491a97ff2040?auto=format&fit=crop&w=900&q=85" alt="صورة العمل الثالث" loading="lazy"><div class="work-content"><small>تصنيف العمل</small><h3>اسم العمل الثالث</h3><p class="muted">وصف حقيقي مختصر للعمل.</p></div></article>
+</div>
+</div>
+</section>
+<section class="section" id="contact"><div class="container contact-panel"><div><h2>هل ترغب بالتواصل معنا؟</h2><p class="muted">أضف رقم الهاتف أو رابط واتساب الخاص بالنشاط.</p></div><a class="btn btn-primary" id="contactLink" href="https://wa.me/000000000000" target="_blank" rel="noopener">تواصل عبر واتساب</a></div></section>
+</main>
+<footer><div class="container">© <span id="year"></span> <span id="footerName">اسم النشاط</span>. جميع الحقوق محفوظة.</div></footer>
+<script>
+const menuButton=document.querySelector('.menu-toggle');
+const menu=document.querySelector('#mainNav');
+menuButton.addEventListener('click',()=>{const open=menu.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(open));});
+menu.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{menu.classList.remove('open');menuButton.setAttribute('aria-expanded','false');}));
+document.querySelector('#year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
